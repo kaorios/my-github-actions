@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.3.0
+
+### Minor Changes
+
+- 0e544e9: Update a description
+
 ## 0.2.0
 
 ### Minor Changes
