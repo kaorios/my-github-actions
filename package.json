@@ -9,7 +9,7 @@
     "lint": "next lint",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "npm run build && changeset publish"
+    "release": "npm run build && changeset tag"
   },
   "dependencies": {
     "@changesets/cli": "^2.26.2",
