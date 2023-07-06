@@ -49,7 +49,7 @@ jobs:
 
   changeset:
     runs-on: ubuntu-latest
-    name: TypeScript
+    name: Changeset
     steps:
       - uses: actions/checkout@v3
         with:
