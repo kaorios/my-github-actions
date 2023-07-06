@@ -75,8 +75,8 @@ jobs:
         run: npm run check:changeset
 
       - name: Error handling
-        if: ${{ steps.error_execution.outcome == 'failure' }}
+        if: ${{ steps.check-changeset.outcome == 'failure' }}
         run: |
           echo "Please add Changesets: npm run changeset"
-          echo ${{ steps.error_execution.outcome }}
+          echo ${{ steps.check-changeset.outcome }}
           exit 1
