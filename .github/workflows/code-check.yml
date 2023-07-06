@@ -72,7 +72,7 @@ jobs:
       - name: Check if the pull requests have changesets
         id: check-changeset
         continue-on-error: true
-        run: npm run check:changeset
+        run: npm run check:changeset -- --since origin/main
 
       - name: Error handling
         if: ${{ steps.check-changeset.outcome == 'failure' }}
