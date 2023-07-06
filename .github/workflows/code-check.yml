@@ -47,6 +47,7 @@ jobs:
 
       - run: npm run check:type
 
+  # https://github.com/changesets/changesets/blob/main/docs/automating-changesets.md#blocking
   changeset:
     runs-on: ubuntu-latest
     name: Changeset
@@ -68,4 +69,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - run: npm run check:changeset
+      - name: Check if the pull requests have changesets
+        id: check-changeset
+        continue-on-error: true
+        run: npm run check:changeset
+
+      - name: Error handling
+        if: ${{ steps.error_execution.outcome == 'failure' }}
+        run: |
+          echo "Please add Changesets: npm run changeset"
+          echo ${{ steps.error_execution.outcome }}
+          exit 1
