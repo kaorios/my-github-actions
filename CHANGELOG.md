@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.4.1
+
+### Patch Changes
+
+- 10b1b99: Test patch version
+
 ## 0.4.0
 
 ### Minor Changes
