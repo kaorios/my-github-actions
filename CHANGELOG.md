@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.4.0
+
+### Minor Changes
+
+- a257ddb: Update README to add how to use release action
+
 ## 0.3.0
 
 ### Minor Changes
