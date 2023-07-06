@@ -11,7 +11,7 @@
     "test": "jest",
     "changeset": "changeset",
     "changeset-empty": "changeset --empty",
-    "check:changeset": "changeset status --since=main",
+    "check:changeset": "changeset status",
     "version": "changeset version",
     "release": "npm run build && changeset tag"
   },
