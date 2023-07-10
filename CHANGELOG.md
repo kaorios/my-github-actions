@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.5.1
+
+### Patch Changes
+
+- 7262c38: Test deployment with tags
+
 ## 0.5.0
 
 ### Minor Changes
