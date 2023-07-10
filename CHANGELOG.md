@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.5.3
+
+### Patch Changes
+
+- fa2c2fc: Test GitHub Token (authoer by a user instead of github-actions-bot)
+
 ## 0.5.2
 
 ### Patch Changes
