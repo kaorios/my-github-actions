@@ -3,7 +3,7 @@ name: Deploy to Projection
 on:
   push:
     tags:
-      - v*.**
+      - v*.*.*
 
 permissions: read-all # This is required to read the secrets
 
