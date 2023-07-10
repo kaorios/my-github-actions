@@ -42,6 +42,7 @@ jobs:
           #cwd - Changes node's process.cwd() if the project is not located on the root. Default to process.cwd()
           commit: 'chore(release): version packages'
           title: 'chore(release): version packages'
+          setupGitUser: false
           publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.PATNAME }}
