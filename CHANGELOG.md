@@ -1,5 +1,12 @@
 # github-actions
 
+## 0.5.4
+
+### Patch Changes
+
+- 5c5e247: Test creating a tag with my account
+- 8ef5480: Test a git user
+
 ## 0.5.3
 
 ### Patch Changes
