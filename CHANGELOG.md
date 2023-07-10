@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.5.0
+
+### Minor Changes
+
+- b006914: Test deployment with Amplify webhook
+
 ## 0.4.1
 
 ### Patch Changes
