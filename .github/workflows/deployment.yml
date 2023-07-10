@@ -1,0 +1,17 @@
+name: Deploy to Projection
+
+on:
+  push:
+    tags:
+      - v*.**
+
+permissions: read-all # This is required to read the secrets
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
+        run: |
+          URL="${{ secrets.WEBHOOK_URL }}"
+          curl -X POST -d {} "$URL" -H "Content-Type: application/json"
