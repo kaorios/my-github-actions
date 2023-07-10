@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.5.2
+
+### Patch Changes
+
+- 7b3bba2: Test deployment with tags
+
 ## 0.5.1
 
 ### Patch Changes
