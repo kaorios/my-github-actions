@@ -45,4 +45,4 @@ jobs:
           setupGitUser: false
           publish: npm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.PATNAME }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
