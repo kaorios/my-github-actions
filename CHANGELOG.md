@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.5.1
+
+### Patch Changes
+
+- ce2066c: Test deployment with tags
+
 ## 0.5.0
 
 ### Minor Changes
