@@ -29,6 +29,11 @@ jobs:
       - name: Build the package
         run: npm run build
 
+      - name: Configure git
+        run: |
+          git config --global user.name 'kaori'
+          git config --global user.email 'suigetsukaori+actions@gmail.com'
+
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
