@@ -1,9 +1,8 @@
 name: Deploy to Projection
 
 on:
-  push:
-    tags:
-      - v*.*.*
+  release:
+    types: [published]
 
 permissions: read-all # This is required to read the secrets
 
