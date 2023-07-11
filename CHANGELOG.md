@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.5.6
+
+### Patch Changes
+
+- c909f34: Test git user and GitHub Token
+
 ## 0.5.5
 
 ### Patch Changes
