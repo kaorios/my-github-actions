@@ -1,8 +1,8 @@
-# My GitHub Actions Template
+# My GitHub Actions Templates
 
-## Create Release workflow
+## Release workflow
 
-Use `changesets` to create release note and a tag.
+Use `changesets` to create a release note and a tag.
 [What is the changesets?](https://github.com/changesets/changesets/blob/main/docs/intro-to-using-changesets.md)
 
 1. Install `changesets`
@@ -13,9 +13,13 @@ npm install @changesets/cli && npx changeset init
 
 2. Copy `.github/workflow/release.yml`
 
-3. Create Personal Account Token (GitHub)
+3. Create a Personal Account Token (GitHub)
 
-[GitHub Documents](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+[Create a PAT for your personal repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+
+[Set a PAT policy for your organization](https://docs.github.com/en/organizations/managing-programmatic-access-to-your-organization/setting-a-personal-access-token-policy-for-your-organization)
+
+[Create a PAT for your organization](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
 permissions:
 
