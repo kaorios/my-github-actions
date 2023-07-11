@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.5.8
+
+### Patch Changes
+
+- ee7208f: Test with github-actions bot
+
 ## 0.5.7
 
 ### Patch Changes
