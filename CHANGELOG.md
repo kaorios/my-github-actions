@@ -1,5 +1,12 @@
 # github-actions
 
+## 0.5.5
+
+### Patch Changes
+
+- c5b7704: Test a git user!!
+- 8758f08: Test github token
+
 ## 0.5.4
 
 ### Patch Changes
