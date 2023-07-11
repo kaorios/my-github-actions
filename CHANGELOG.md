@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.5.9
+
+### Patch Changes
+
+- 98a69d8: Test if working correctly with PAT
+
 ## 0.5.8
 
 ### Patch Changes
