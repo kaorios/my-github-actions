@@ -1,7 +1,8 @@
 name: Deploy to Projection
 
-# the pushing tags event does not work with another github workflow
+# The pushing tags event does not work with another github workflow
 # so we are using this release event
+# Please release without github-actions bot
 on:
   release:
     types: [published]
