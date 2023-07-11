@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.5.7
+
+### Patch Changes
+
+- 8147b78: Change a trigger to the release
+
 ## 0.5.6
 
 ### Patch Changes
