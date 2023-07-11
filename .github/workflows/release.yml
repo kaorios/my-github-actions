@@ -32,7 +32,7 @@ jobs:
       - name: Configure git
         run: |
           git config --global user.name 'Kaori'
-          git config --global user.email 'suigetsukaori@gmail.com'
+          git config --global user.email 'suigetsukaori+actions@gmail.com'
 
       - name: Create Release Pull Request or Publish
         id: changesets
@@ -50,4 +50,4 @@ jobs:
           setupGitUser: false
           publish: npm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PATNAME }}
