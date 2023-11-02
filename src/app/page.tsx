@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import test from './text';
 
 export default function Home() {
   return (
