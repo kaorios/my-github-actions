@@ -1,5 +1,11 @@
 # github-actions
 
+## 0.5.10
+
+### Patch Changes
+
+- 67df66c: Add a conflict check when creating pull requests
+
 ## 0.5.9
 
 ### Patch Changes
