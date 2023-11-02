@@ -1,0 +1,29 @@
+name: Conflict Check
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  conflict-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout base branch
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.base.ref }}
+      - name: Checkout pull request branch
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Merge pull request branch into base branch
+        run: git merge --no-commit --no-ff ${{ github.event.pull_request.head.ref }}
+        continue-on-error: true
+      - name: Check for conflicts
+        run: |
+          if git diff --name-only --diff-filter=U | grep -q .; then
+            echo "There are conflicts."
+            exit 1
+          else
+            echo "There are no conflicts."
+          fi
