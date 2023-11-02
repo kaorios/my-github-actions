@@ -27,3 +27,5 @@ jobs:
           else
             echo "There are no conflicts."
           fi
+      - name: Check for build errors
+        run: npm run build
