@@ -23,17 +23,17 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-node-1
 
       - name: Cache node modules
         uses: actions/cache@v3
-        if: ${{ steps.first_cache_check.outputs.cache-hit != 'true' }}
+        if: ${{ steps.first_cache_check.outputs.cache-hit == 'true' }}
         id: second_cache_check
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-node-2
       - name: Not Cache node modules
         if: ${{ steps.second_cache_check.outputs.cache-hit != 'true' }}
         run: npm ci
